@@ -12,8 +12,8 @@ sudo dnf -y up
 sudo dnf -y in https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
 #   Install base packages
 sudo dnf -y in nano git curl bash bash-devel wget btop fastfetch firefox kitty dolphin code tmux sddm
-
-
+#   Install NerdFont
+sudo unzip CodeNewRoman.zip -d ~/.local/share/fonts/
 #   Enable Starship COPR repo
 sudo dnf copr enable atim/starship
 #   Enable Hyprland COPR repository

@@ -20,6 +20,9 @@ sudo unzip -n NedFontsSymbolsOnly.zip -d ~/.local/share/fonts/
 sudo unzip -n SpaceMono.zip -d ~/.local/share/fonts/
 #   Install base packages
 sudo dnf -y in nano git curl bash bash-devel wget btop fastfetch firefox kitty dolphin code tmux sddm starship
+#   Configure Fedora for graphical userspace
+sudo systemctl enable sddm --force
+sudo systemctl set-default graphical.target
 #   Install Hyprland and additional dependencies
 sudo dnf -y in hyprland hyprland-devel hyprpaper hypridle hyprlock hyprpicker hyprshot cliphist nwg-clipman waypaper waybar-git pavucontrol SwayNotificationCenter libnotify libnotify-devel
 

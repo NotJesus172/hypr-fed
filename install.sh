@@ -19,7 +19,7 @@ sudo unzip -n ComicShannsMono.zip -d ~/.local/share/fonts/
 sudo unzip -n NedFontsSymbolsOnly.zip -d ~/.local/share/fonts/
 sudo unzip -n SpaceMono.zip -d ~/.local/share/fonts/
 #   Install base packages
-sudo dnf -y in nano git curl bash bash-devel wget btop fastfetch firefox kitty dolphin code tmux sddm starship stow
+sudo dnf -y in nano git curl bash bash-devel wget btop fastfetch firefox kitty dolphin code tmux sddm starship stow torbrowser-launcher
 #   Configure Fedora for graphical userspace
 sudo systemctl enable sddm --force
 sudo systemctl set-default graphical.target

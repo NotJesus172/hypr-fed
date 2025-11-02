@@ -23,7 +23,7 @@ sudo unzip -n ComicShannsMono.zip -d ~/.local/share/fonts/
 sudo unzip -n NedFontsSymbolsOnly.zip -d ~/.local/share/fonts/
 sudo unzip -n SpaceMono.zip -d ~/.local/share/fonts/
 #   Install base packages
-sudo dnf -y in nano git curl bash bash-devel wget btop fastfetch firefox kitty dolphin code tmux sddm starship dnf-plugins-core
+sudo dnf -y in nano git curl bash bash-devel wget btop fastfetch firefox kitty dolphin flatpak code tmux sddm starship dnf-plugins-core
 #   Install Docker packages
 sudo dnf -y in docker-ce docker-ce-cli containerd.io docker-buildx-pugin docker-compose-plugin
 #   Adds current user to docker group

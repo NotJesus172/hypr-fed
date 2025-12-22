@@ -23,7 +23,7 @@ sudo unzip -n ComicShannsMono.zip -d ~/.local/share/fonts/
 sudo unzip -n NedFontsSymbolsOnly.zip -d ~/.local/share/fonts/
 sudo unzip -n SpaceMono.zip -d ~/.local/share/fonts/
 #   Install base packages
-sudo dnf -y in nano curl bash bash-devel wget btop fastfetch firefox kitty dolphin samba-client cifs-utils code tmux sddm starship torbrowser-launcher gqrx
+sudo dnf -y in nano curl bash bash-devel wget btop fastfetch firefox kitty dolphin samba-client cifs-utils code tmux sddm starship torbrowser-launcher gqrx 
 #   Install Docker packages
 sudo dnf -y in docker-ce docker-ce-cli containerd.io docker-buildx-pugin docker-compose-plugin
 #   Adds current user to docker group
@@ -32,7 +32,7 @@ sudo usermod -aG docker $USER && newgrp docker
 sudo systemctl enable sddm --force
 sudo systemctl set-default graphical.target
 #   Install Hyprland and additional dependencies
-sudo dnf -y in hyprland hyprland-devel hyprpaper hypridle hyprlock hyprpicker hyprshot hyprsunset pipewire qt5-qtwayland qt6-qtwayland cliphist nwg-clipman waypaper waybar-git pavucontrol SwayNotificationCenter libnotify libnotify-devel tuned tuned-ppd blueman
+sudo dnf -y in hyprland hyprland-devel hyprpaper hypridle hyprlock hyprpicker hyprshot hyprsunset NetworkManager NetworkManager-wifi NetworkManager-bluetooth NetworkManager-tui pipewire qt5-qtwayland qt6-qtwayland cliphist nwg-clipman waypaper waybar pavucontrol SwayNotificationCenter libnotify libnotify-devel tuned tuned-ppd blueman gvfs gvfs-mtp nm-connection-editor-desktop 
 #   Autoremove any unneccecary packages
 sudo dnf -y autoremove
 

@@ -32,7 +32,7 @@ sudo usermod -aG docker $USER && newgrp docker
 sudo systemctl enable sddm --force
 sudo systemctl set-default graphical.target
 #   Install Hyprland and additional dependencies
-sudo dnf -y in hyprland hyprland-devel hyprpaper hypridle hyprlock hyprpicker hyprshot hyprsunset pipewire qt5-qtwayland qt6-qtwayland cliphist nwg-clipman waypaper waybar-git pavucontrol SwayNotificationCenter libnotify libnotify-devel
+sudo dnf -y in hyprland hyprland-devel hyprpaper hypridle hyprlock hyprpicker hyprshot hyprsunset pipewire qt5-qtwayland qt6-qtwayland cliphist nwg-clipman waypaper waybar-git pavucontrol SwayNotificationCenter libnotify libnotify-devel tuned tuned-ppd blueman
 #   Autoremove any unneccecary packages
 sudo dnf -y autoremove
 

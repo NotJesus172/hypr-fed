@@ -4,7 +4,7 @@
 sudo echo echo "[main]" > /etc/dnf/dnf.conf
 sudo echo "" >> /etc/dnf/dnf.conf
 sudo echo "" >> /etc/dnf/dnf.conf
-sudo echo "max_parallel_downloads=14" >> /etc/dnf/dnf.conf
+sudo echo "max_parallel_downloads=10" >> /etc/dnf/dnf.conf
 sudo echo "fastestmirror=true" >> /etc/dnf/dnf.conf
 #   Updates initial system packages
 sudo dnf -y up

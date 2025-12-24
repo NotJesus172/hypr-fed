@@ -68,6 +68,8 @@ sudo usermod -aG docker $USER && newgrp docker
 #   Configure Fedora for graphical userspace
 sudo systemctl enable sddm
 sudo systemctl set-default graphical.target
+#   Download Background Wallpaper Files
+git clone https://github.com/NotJesus172/backgrounds.git ~/Pictures/backgrounds
 #   Install Hyprland and additional dependencies
 sudo dnf -y up
 sudo dnf -y in hyprland

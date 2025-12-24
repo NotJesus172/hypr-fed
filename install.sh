@@ -53,6 +53,7 @@ sudo dnf -y in code
 sudo dnf -y in tmux
 sudo dnf -y in starship
 sudo dnf -y in torbrowser-launcher
+sudo dnf -y in steam
 sudo dnf -y in gqrx
 sudo dnf -y in @kde-desktop-environment
 sudo dnf -y in sddm

@@ -104,4 +104,6 @@ sudo dnf -y in nm-connection-editor-desktop
 #   Autoremove any unneccecary packages
 sudo dnf -y up
 sudo dnf -y autoremove
+#   Reboot
+sudo reboot now
 

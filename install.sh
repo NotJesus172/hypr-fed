@@ -55,8 +55,6 @@ sudo dnf -y in starship
 sudo dnf -y in torbrowser-launcher
 sudo dnf -y in steam
 sudo dnf -y in gqrx
-sudo dnf -y in @kde-desktop-environment
-sudo dnf -y in sddm
 #   Install Docker packages
 sudo dnf -y up
 sudo dnf -y in docker-ce
@@ -75,6 +73,7 @@ git clone https://github.com/NotJesus172/backgrounds.git ~/Pictures/backgrounds
 sudo dnf -y up
 sudo dnf -y in hyprland
 sudo dnf -y in hyprland-devel
+sudo dnf -y in hyprland-qtutils
 sudo dnf -y in hyprpaper
 sudo dnf -y in hypridle
 sudo dnf -y in hyprlock
@@ -102,8 +101,11 @@ sudo dnf -y in blueman
 sudo dnf -y in gvfs
 sudo dnf -y in gvfs-mtp
 sudo dnf -y in nm-connection-editor-desktop 
-#   Autoremove any unneccecary packages
+#   Install SDDM and KDE dependencies
 sudo dnf -y up
+sudo dnf -y in @kde-desktop-environment
+sudo dnf -y in sddm
+#   Autoremove any unneccecary packages
 sudo dnf -y autoremove
 #   Reboot
 sudo reboot now

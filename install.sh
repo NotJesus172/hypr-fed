@@ -30,6 +30,9 @@ sudo dnf -y copr enable atim/starship #  Starship
 sudo dnf -y up
 sudo dnf -y copr enable solopasha/hyprland #  Hyprland
 sudo dnf -y up
+#   Install VSCode Repo and dependancies
+sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc &&
+echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\nautorefresh=1\ntype=rpm-md\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" | sudo tee /etc/yum.repos.d/vscode.repo > /dev/null
 #   Install NerdFonts
 sudo dnf -y in unzip
 sudo unzip -n CodeNewRoman.zip -d /usr/share/fonts/CodeNewRoman
@@ -42,6 +45,7 @@ sudo dnf -y in curl
 sudo dnf -y in kitty
 sudo dnf -y in fastfetch
 sudo dnf -y in firefox
+sudo dnf -y in discord
 sudo dnf -y in bash
 sudo dnf -y in bash-devel
 sudo dnf -y in wget
@@ -101,10 +105,9 @@ sudo dnf -y in blueman
 sudo dnf -y in gvfs
 sudo dnf -y in gvfs-mtp
 sudo dnf -y in nm-connection-editor-desktop 
-#   Install SDDM and KDE dependencies
+#   Install GDM
 sudo dnf -y up
-sudo dnf -y in @kde-desktop-environment
-sudo dnf -y in sddm
+sudo dnf -y in gdm
 #   Autoremove any unneccecary packages
 sudo dnf -y autoremove
 #   Reboot
